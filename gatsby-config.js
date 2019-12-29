@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -42,13 +43,11 @@ module.exports = {
     },
     "gatsby-plugin-stripe",
     {
-      resolve: 'gatsby-source-stripe',
+      resolve: "gatsby-source-stripe",
       options: {
-        objects: [
-          'Sku'
-        ],
+        objects: ["Sku"],
         secretKey: process.env.STRIPE_SK
-      }
+      },
     },
   ],
 }
